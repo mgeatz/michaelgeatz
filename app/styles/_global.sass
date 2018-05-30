@@ -1,0 +1,97 @@
+@import colors
+
+a.btn
+  border-radius: 30px
+  border: 1px solid $semi-trans
+
+header
+  background-color: $semi-trans !important
+
+footer
+  min-height: 30px !important
+  background-color: $semi-trans !important
+
+header, footer
+  border: none !important
+  position: relative !important
+
+select, option
+  background-color: $semi-trans
+
+video
+  position: absolute
+  top: 0
+
+#myVideo
+  position: fixed
+  right: 0
+  bottom: 0
+  min-width: 100%
+  min-height: 100%
+  z-index: 0
+
+.font_handwriting
+  font-family: 'Waiting for the Sunrise', cursive
+
+.font_serif
+  font-family: 'Yrsa', serif
+
+.theme_light
+  color: $light-gray
+  select
+    color: $very-white
+  .secondary, h2, h4, h6, small, i
+    color: $light-gray
+  a.btn.btn-secondary
+    &:hover
+      background-color: $very-white
+      color: $dark-gray
+
+.theme_dark
+  color: $dark-gray
+  .secondary, h2, h4, h6, small, i
+    color: $dark-gray
+  a.btn.btn-secondary
+    &:hover
+      background-color: $midnight-black
+      color: $light-gray
+
+.theme_green
+  color: $off-white
+  .secondary, h2, h4, h6, small, i
+    color: $green-pop
+  a.btn.btn-secondary
+    &:hover
+      background-color: $olive-pop
+      color: $very-white
+
+.theme_orange
+  color: $off-white
+  .secondary, h2, h4, h6, small, i
+    color: $orange-pop
+  a.btn.btn-secondary
+    &:hover
+      background-color: $mango-pop
+
+.theme_blue
+  color: $off-white
+  .secondary, h2, h4, h6, small, i
+    color: $blue-pop
+  a.btn.btn-secondary
+    &:hover
+      background-color: $navy-blue
+
+.theme_gold
+  color: $off-white
+  .secondary, h2, h4, h6, small, i
+    color: $bronze-pop
+  a.btn.btn-secondary
+    &:hover
+      background-color: $gray-trans
+
+.font_big
+  font-size: 100px
+
+.center_align
+  text-align: center
+
