@@ -4,16 +4,16 @@ const ThumbnailPlusComponent = Component.extend({
 
   actions: {
 
-    renderPillarDetails(thumbDirect) {
-      console.log('renderPillarDetails component');
-      this.sendAction('renderPillarDetails', thumbDirect);
+    actionBubble(thumbParam) {
+      console.log('actionBubble component', thumbParam);
+      this.sendAction('actionBubble', thumbParam);
     }
 
   }
 });
 
 ThumbnailPlusComponent.reopenClass({
-  positionalParams: ['icon','title','description','renderPillarDetails', 'thumbDirect']
+  positionalParams: ['icon','title','description','actionBubble', 'thumbParam']
 });
 
 export default ThumbnailPlusComponent;

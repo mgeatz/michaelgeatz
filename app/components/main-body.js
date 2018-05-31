@@ -43,18 +43,24 @@ export default Component.extend({
     },
 
 
-    renderPillarDetails(thumbDirect) {
-      console.log('renderPillarDetails - parent component', thumbDirect);
-      this.send('updatePillar', thumbDirect);
+    newRoute(thumbParam) {
+      console.log('newRoute - parent component', thumbParam);
+      this.sendAction('newRoute', thumbParam);
     },
 
 
-    updatePillar(thumbDirect) {
+    renderPillarDetails(thumbParam) {
+      console.log('renderPillarDetails - parent component', thumbParam);
+      this.send('updatePillar', thumbParam);
+    },
+
+
+    updatePillar(thumbParam) {
       this.set('noSelection', false);
       this.set('individualServices', false);
       this.set('smallBusinessServices', false);
       this.set('enterpriseConsulting', false);
-      this.set(thumbDirect, true);
+      this.set(thumbParam, true);
     },
 
     backToPillars() {
