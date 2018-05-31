@@ -8,6 +8,12 @@ export default Component.extend({
 
   themes: ['theme_light', 'theme_dark', 'theme_green', 'theme_orange', 'theme_blue', 'theme_gold'],
 
+  noSelection: true,
+  individualServices: false,
+  smallBusinessServices: false,
+  enterpriseConsulting: false,
+
+
   init() {
     this._super();
 
@@ -30,10 +36,32 @@ export default Component.extend({
       console.log('change theme route', selection);
 
       let $element = Ember.$('.mwg_body'),
-          classes = $element.attr('class');
+          classes  = $element.attr('class');
 
       $element.removeClass(classes.match(/theme.*/g));
       $element.addClass(selection);
+    },
+
+
+    renderPillarDetails(thumbDirect) {
+      console.log('renderPillarDetails - parent component', thumbDirect);
+      this.send('updatePillar', thumbDirect);
+    },
+
+
+    updatePillar(thumbDirect) {
+      this.set('noSelection', false);
+      this.set('individualServices', false);
+      this.set('smallBusinessServices', false);
+      this.set('enterpriseConsulting', false);
+      this.set(thumbDirect, true);
+    },
+
+    backToPillars() {
+      this.set('noSelection', true);
+      this.set('individualServices', false);
+      this.set('smallBusinessServices', false);
+      this.set('enterpriseConsulting', false);
     }
 
   }

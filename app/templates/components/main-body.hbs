@@ -2,52 +2,98 @@
 {{content/hero-video}}
 <div class="container-fluid">
 
-  <div class="container page-header">
-    <h1>Individual Services <small>Educational Items For The People</small></h1>
-  </div>
+  {{#if noSelection}}
+    <div class="container page-header">
+      <h1>Building Tomorrow's Technology Today
+        <small>Choose 1 of 3 Key Pillars</small>
+      </h1>
+    </div>
+    <section class="container">
+      <div class="col-sm-4">
+        {{content/thumbnail-plus 'fas fa-male font_big'
+                                 'Individual Services'
+                                 'Education: Webinars | Live Stream | Tutoring'
+                                 'renderPillarDetails'
+                                 'individualServices'}}
+      </div>
+      <div class="col-sm-4">
+        {{content/thumbnail-plus 'fas fa-users font_big'
+                                 'Small Business Services'
+                                 'Development | Hosting | Website | Mobile Application'
+                                 'renderPillarDetails'
+                                 'smallBusinessServices'}}
+      </div>
+      <div class="col-sm-4">
+        {{content/thumbnail-plus 'fas fa-building font_big'
+                                 'Enterprise Consulting'
+                                 'AEM Consulting Available'
+                                 'renderPillarDetails'
+                                 'enterpriseConsulting'}}
+      </div>
+    </section>
+  {{else}}
+    <span {{action 'backToPillars' on='click'}}>Back To Pillars</span>
+    {{#if individualServices}}
+      <div class="container page-header">
+        <h1>Individual Services
+          <small>Educational Items For The People</small>
+        </h1>
+      </div>
 
-  <section class="container row promo_media">
-    <div class="col-sm-3">
-      {{content/thumbnail-plus 'fab fa-html5 font_big' 'Learn HTML5' 'What makes a webpage?'}}
-    </div>
-    <div class="col-sm-3">
-      {{content/thumbnail-plus 'fab fa-css3-alt font_big' 'Explore CSS' 'How to add style.'}}
-    </div>
-    <div class="col-sm-3">
-      {{content/thumbnail-plus 'fab fa-js-square font_big' 'Conquor JavaScript' 'Breathing life into an app'}}
-    </div>
-    <div class="col-sm-3">
-      {{content/thumbnail-plus 'fab fa-node-js font_big' 'NodeJS APIs' 'Beyond the DOM'}}
-    </div>
-  </section>
+      <section class="container row promo_media">
+        <div class="col-sm-3">
+          {{content/thumbnail-plus 'fab fa-html5 font_big' 'Learn HTML5' 'What makes a webpage?'}}
+        </div>
+        <div class="col-sm-3">
+          {{content/thumbnail-plus 'fab fa-css3-alt font_big' 'Explore CSS' 'How to add style.'}}
+        </div>
+        <div class="col-sm-3">
+          {{content/thumbnail-plus 'fab fa-js-square font_big' 'Conquor JavaScript' 'Breathing life into an app'}}
+        </div>
+        <div class="col-sm-3">
+          {{content/thumbnail-plus 'fab fa-node-js font_big' 'NodeJS APIs' 'Beyond the DOM'}}
+        </div>
+      </section>
 
-  <section class="container row promo_media">
-    <div class="col-sm-3">
-      {{content/thumbnail-plus 'fab fa-linode font_big' 'Java BlockChain' 'The future begins'}}
-    </div>
-    <div class="col-sm-3">
-      {{content/thumbnail-plus 'fab fa-cloudversify font_big' 'Cloud Solutions' 'Host everything elsewhere'}}
-    </div>
-    <div class="col-sm-3">
-      {{content/thumbnail-plus 'fas fa-server font_big' 'Server Configuration' 'Build one to understand'}}
-    </div>
-    <div class="col-sm-3">
-      {{content/thumbnail-plus 'fas fa-phone-square font_big' 'Contact Info' 'If you need help w/ something'}}
-    </div>
-  </section>
+      <section class="container row promo_media">
+        <div class="col-sm-3">
+          {{content/thumbnail-plus 'fab fa-linode font_big' 'Java BlockChain' 'The future begins'}}
+        </div>
+        <div class="col-sm-3">
+          {{content/thumbnail-plus 'fab fa-cloudversify font_big' 'Cloud Solutions' 'Host everything elsewhere'}}
+        </div>
+        <div class="col-sm-3">
+          {{content/thumbnail-plus 'fas fa-server font_big' 'Server Configuration' 'Build one to understand'}}
+        </div>
+        <div class="col-sm-3">
+          {{content/thumbnail-plus 'fas fa-phone-square font_big' 'Contact Info' 'If you need help w/ something'}}
+        </div>
+      </section>
 
-  <div class="container page-header">
-    <h1>EDU Schedule <small>Past & Present Webinars / Streaming</small></h1>
-  </div>
+      <section class="container">
+        {{edu-calendar}}
+      </section>
+    {{/if}}
+    {{#if smallBusinessServices}}
+      <div class="container page-header">
+        <h1>Small Business Services
+          <small>Website UI, Domain Hosting, Backend Development</small>
+        </h1>
+      </div>
+    {{/if}}
+    {{#if enterpriseConsulting}}
+      <div class="container page-header">
+        <h1>Enterprise Consulting
+          <small>Adobe Experience Manager Expert</small>
+        </h1>
+      </div>
+    {{/if}}
+  {{/if}}
 
-  {{edu-calendar}}
-<br>
-<br>
-  {{content/media-object}}
-<br>
-<br>
-<br>
-<br>
+
+  <br>
+  <br>
+  <br>
 </div>
 
-{{main-footer}}
+
