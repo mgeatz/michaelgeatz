@@ -1,14 +1,23 @@
 {{main-header changeTheme='changeTheme'}}
 {{content/hero-video}}
-<div class="container-fluid">
+<div class="">
 
   {{#if noSelection}}
-    <div class="container page-header">
+    <div class="container page-header"
+         style="border-radius: 50%;height: 500px;width: 500px;text-align: center;padding-top: 175px !important;">
       <h1>Building Tomorrow's Technology Today
-        <small>Choose 1 of 3 Key Pillars</small>
+        <small><br>Choose 1 of 3 Key Pillars</small>
       </h1>
     </div>
-    <section class="container">
+    <br>
+    <br>
+    <div class="center_align">
+      <i class="fas fa-angle-double-down font_big"></i>
+    </div>
+    <br>
+    <br>
+    <br>
+    <section class="container-fluid">
       <div class="col-sm-4">
         {{content/thumbnail-plus 'fas fa-male font_big'
                                  'Individual Services'
@@ -94,10 +103,6 @@
     {{/if}}
   {{/if}}
 
-
-  <br>
-  <br>
-  <br>
 </div>
 
-
+{{main-footer}}
