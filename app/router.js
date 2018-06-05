@@ -10,6 +10,11 @@ Router.map(function() {
   this.route('main', { path: '/' });
   this.route('html5');
   this.route('main');
+  this.route('small-business');
+  this.route('web');
+  this.route('individual');
+  this.route('enterprise');
+  this.route('aem');
 });
 
 export default Router;

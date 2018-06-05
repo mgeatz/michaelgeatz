@@ -43,9 +43,9 @@ export default Component.extend({
     },
 
 
-    newRoute(thumbParam) {
-      console.log('newRoute - parent component', thumbParam);
-      this.sendAction('newRoute', thumbParam);
+    newRoute(thumbParam, linkage) {
+      console.log('newRoute - parent component', thumbParam, linkage);
+      this.sendAction('newRoute', thumbParam, linkage);
     },
 
 
