@@ -1,4 +1,4 @@
-{{main-header changeTheme='changeTheme'}}
+
 
 {{content/hero-video}}
 
@@ -19,29 +19,34 @@
   <br><br><br>
 
   <section class="container-fluid">
-    <div class="col-sm-4" id="main">
-      {{content/thumbnail-plus 'fas fa-male font_big'
-                               'Individual Services'
-                               'Education: Webinars | Live Stream | Tutoring'
-                               'newRoute'
-                               'individual'}}
-    </div>
-    <div class="col-sm-4">
-      {{content/thumbnail-plus 'fas fa-users font_big'
-                               'Small Business Services'
-                               'Development | Hosting | Website | Mobile Application'
-                               'newRoute'
-                               'small-business'}}
-    </div>
-    <div class="col-sm-4">
-      {{content/thumbnail-plus 'fas fa-building font_big'
-                               'Enterprise Consulting'
-                               'AEM Consulting Available'
-                               'newRoute'
-                               'enterprise'}}
+    <img src="images/dots.png" class="dots_left"/>
+    <div class="container">
+      <div class="col-sm-4" id="main">
+        {{content/thumbnail-plus 'fas fa-male font_big'
+                                 'Individual Services'
+                                 'Education: Webinars | Live Stream | Tutoring'
+                                 'newRoute'
+                                 'individual'}}
+      </div>
+      <div class="col-sm-4">
+        {{content/thumbnail-plus 'fas fa-users font_big'
+                                 'Small Business Services'
+                                 'Development | Hosting | Website | Mobile Application'
+                                 'newRoute'
+                                 'small-business'}}
+      </div>
+      <div class="col-sm-4">
+        {{content/thumbnail-plus 'fas fa-building font_big'
+                                 'Enterprise Consulting'
+                                 'AEM Consulting Available'
+                                 'newRoute'
+                                 'enterprise'}}
+      </div>
     </div>
   </section>
 
+  {{main-footer}}
+
 </div>
 
-{{main-footer}}
+

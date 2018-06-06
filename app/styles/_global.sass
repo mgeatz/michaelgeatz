@@ -10,7 +10,7 @@ header
 
 footer
   min-height: 30px !important
-  background-color: $very-white !important
+  background-color: $bronze-pop !important
 
 header, footer
   border: none !important
@@ -34,6 +34,23 @@ video
   min-width: 100%
   min-height: 100%
   z-index: -1
+
+.mini_video
+  position: fixed
+  right: 0
+  bottom: 0
+  min-width: 100%
+  min-height: 100%
+  z-index: -1
+  margin-bottom: 150px
+
+.sub_page
+  position: relative
+  top: 300px
+  .page-header
+    margin-top: -300px
+  section
+    box-shadow: 0 0 7px 1px $semi-trans
 
 .font_handwriting
   font-family: 'Waiting for the Sunrise', cursive
@@ -101,3 +118,14 @@ video
   text-align: center
   margin: auto
 
+.dots_left
+  position: absolute
+  left: 0
+  transform: rotate(90deg)
+  opacity: 0.7
+
+.dots_right
+  position: absolute
+  right: 0
+  transform: rotate(34deg)
+  opacity: 0.7
