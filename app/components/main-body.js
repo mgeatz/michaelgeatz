@@ -45,6 +45,7 @@ export default Component.extend({
 
     newRoute(thumbParam, linkage) {
       console.log('newRoute - parent component', thumbParam, linkage);
+      window.scrollTo(0,0);
       this.sendAction('newRoute', thumbParam, linkage);
     },
 

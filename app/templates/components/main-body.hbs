@@ -1,10 +1,7 @@
-
-
 {{content/hero-video}}
 
-<div class="">
-  <div class="container page-header"
-       style="border-radius: 50%;height: 500px;width: 500px;text-align: center;padding-top: 200px !important;">
+<div class="wrapper">
+  <div class="container page-header" id="hero_circle">
     <h1>MICHAEL GEATZ
       <small><br>Software Engineer</small>
     </h1>
@@ -15,38 +12,39 @@
   <div class="center_align">
     <a href="#main"><i class="fas fa-angle-double-down font_big"></i></a>
   </div>
-
-  <br><br><br>
-
-  <section class="container-fluid">
-    <img src="images/dots.png" class="dots_left"/>
-    <div class="container">
-      <div class="col-sm-4" id="main">
-        {{content/thumbnail-plus 'fas fa-male font_big'
-                                 'Individual Services'
-                                 'Education: Webinars | Live Stream | Tutoring'
-                                 'newRoute'
-                                 'individual'}}
-      </div>
-      <div class="col-sm-4">
-        {{content/thumbnail-plus 'fas fa-users font_big'
-                                 'Small Business Services'
-                                 'Development | Hosting | Website | Mobile Application'
-                                 'newRoute'
-                                 'small-business'}}
-      </div>
-      <div class="col-sm-4">
-        {{content/thumbnail-plus 'fas fa-building font_big'
-                                 'Enterprise Consulting'
-                                 'AEM Consulting Available'
-                                 'newRoute'
-                                 'enterprise'}}
-      </div>
-    </div>
-  </section>
-
-  {{main-footer}}
-
 </div>
+
+<br><br><br>
+
+<section class="container-fluid" id="main">
+  <img src="images/dots.png" class="dots_left"/>
+  <div class="container">
+    <div class="col-sm-4">
+      {{content/thumbnail-plus 'fas fa-male font_big'
+                               'Individual Services'
+                               'Education: Webinars | Live Stream | Tutoring'
+                               'newRoute'
+                               'individual'}}
+    </div>
+    <div class="col-sm-4">
+      {{content/thumbnail-plus 'fas fa-users font_big'
+                               'Small Business Services'
+                               'Development | Hosting | Website | Mobile Application'
+                               'newRoute'
+                               'small-business'}}
+    </div>
+    <div class="col-sm-4">
+      {{content/thumbnail-plus 'fas fa-building font_big'
+                               'Enterprise Consulting'
+                               'AEM Consulting Available'
+                               'newRoute'
+                               'enterprise'}}
+    </div>
+  </div>
+</section>
+
+{{main-footer}}
+
+
 
 
