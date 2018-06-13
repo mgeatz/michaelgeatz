@@ -15,6 +15,7 @@ Router.map(function() {
   this.route('individual');
   this.route('enterprise');
   this.route('aem');
+  this.route('contact');
 });
 
 export default Router;
