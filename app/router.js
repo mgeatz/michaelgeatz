@@ -12,10 +12,20 @@ Router.map(function() {
   this.route('main');
   this.route('small-business');
   this.route('web');
-  this.route('individual');
+  this.route('individual', function() {
+    this.route('html5');
+    this.route('explore-css');
+    this.route('conquor-javascript');
+    this.route('api-development');
+    this.route('blockchain');
+    this.route('cloud-solutions');
+    this.route('server-configuration');
+  });
   this.route('enterprise');
   this.route('aem');
   this.route('contact');
+  this.route('ebook');
+  this.route('developer');
 });
 
 export default Router;

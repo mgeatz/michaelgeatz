@@ -11,12 +11,13 @@
   <section class="container">
 
     <div class="center_align">
-      <h2>Websites Designed For Small Businesses</h2>
-      <h4>Starting At $599 Per Year</h4>
+      <h2>Designed For Small Businesses</h2>
+      <h4>Websites Starting At $599 Per Year</h4>
       <hr>
     </div>
 
-    <p>Basic website package starts at $500 per year. Includes:</p>
+    <h3>Website Package</h3>
+    <p>$599 per year, includes:</p>
     <ul>
       <li>Friendly webmaster to help answer your questions</li>
       <li>5 page website</li>
@@ -30,27 +31,29 @@
       <li>Domain name registration</li>
     </ul>
 
-    <p>Optional additional Features (one time charge):</p>
-    <ul>
-      <li>Additional Form ($25)</li>
-      <li>Comparison table ($25)</li>
-      <li>Calendar ($25)</li>
-      <li>1 landing page for lead generation ($50)</li>
-      <li>Basic Online Payment ($50)</li>
-      <li>Online Application Submission ($50)</li>
-      <li>Basic Scheduling Assistant ($100)</li>
-      <li>Basic 3 Step Wizard ($250)</li>
-      <li>Ecommerce functionality ($500)</li>
-      <li>Custom Scheduling Assistant Calendar ($2,500)</li>
-      <li>Custom Wizard ($3,500)</li>
-      <li>Custom Online Billing Management ($5,000)</li>
-      <li>Site maintenance credit ($75)</li>
-    </ul>
-
-
-
-    <br>
-    <h4>Previous Work Portfolio</h4>
+    {{#bs-accordion as |acc|}}
+      {{#acc.item value=1 title="Optional Additional Features:"}}
+        <p>The items listed below are not rolled into the annual payment
+          - they are a one time charge, if chosen.</p>
+        <ul>
+          <li>Additional Form ($25)</li>
+          <li>Comparison table ($25)</li>
+          <li>Calendar ($25)</li>
+          <li>1 landing page for lead generation ($50)</li>
+          <li>Basic Online Payment ($50)</li>
+          <li>Online Application Submission ($50)</li>
+          <li>Basic Scheduling Assistant ($100)</li>
+          <li>Basic 3 Step Wizard ($250)</li>
+          <li>Ecommerce functionality ($500)</li>
+          <li>Custom Scheduling Assistant Calendar ($2,500)</li>
+          <li>Custom Wizard ($3,500)</li>
+          <li>Custom Online Billing Management ($5,000)</li>
+          <li>Site maintenance credit ($75)</li>
+        </ul>
+      {{/acc.item}}
+    {{/bs-accordion}}
+    <hr>
+    <h2>Previous Work Portfolio</h2>
     <ul class="showcase">
       <li><a target="_blank" href="https://github.com/mgeatz">Michael's Public Code Repositories</a></li>
       <li><a target="_blank" href="http://www.learnaem.com/">Learn AEM, WordPress</a></li>

@@ -37,6 +37,9 @@ video
 img
   max-width: 300px
 
+li
+  list-style: square
+
 .wrapper
 
 
@@ -149,3 +152,24 @@ img
   height: 100%
   position: absolute
   max-width: 100%
+
+.panel-heading
+  height: 37px !important
+
+.expanded, .collapsed
+  &:after
+    position: relative
+    top: -29px
+    font-weight: 700
+    font-size: 30px
+    left: 95%
+    height: 0px
+    color: $bronze-pop
+
+.expanded
+  &:after
+    content: '-'
+
+.collapsed
+  &:after
+    content: '+'
