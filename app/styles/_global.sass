@@ -1,5 +1,13 @@
 @import colors
 
+
+body
+  background: url("/images/stars.png") no-repeat center center fixed
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
 p, ul, li
   font-size: 18px !important
 
@@ -22,6 +30,18 @@ footer
 header, footer
   border: none !important
   position: relative !important
+  nav
+    background-color: transparent !important
+    background: transparent !important
+    border: none !important
+    ul
+      right: 15px !important
+      position: absolute
+      li
+        a
+          background-color: transparent !important
+          padding-top: 21px !important
+          color: $bronze-pop !important
 
 section
   background-color: $very-white !important
@@ -150,26 +170,43 @@ li
 .bck_stars
   top: 0
   height: 100%
-  position: absolute
-  max-width: 100%
+  width: 100%
 
 .panel-heading
   height: 37px !important
 
-.expanded, .collapsed
-  &:after
-    position: relative
-    top: -29px
-    font-weight: 700
-    font-size: 30px
-    left: 95%
-    height: 0px
-    color: $bronze-pop
+#accord
+  .expanded, .collapsed
+    &:after
+      position: relative
+      top: -29px
+      font-weight: 700
+      font-size: 30px
+      left: 95%
+      height: 0px
+      color: $bronze-pop
+  .expanded
+    &:after
+      content: '-'
+  .collapsed
+    &:after
+      content: '+'
 
-.expanded
-  &:after
-    content: '-'
-
-.collapsed
-  &:after
-    content: '+'
+@media only screen and (max-width: 768px)
+  .nav
+    background: $navy-blue !important
+    width: 100% !important
+    text-align: center !important
+    height: 900px
+    padding-top: 60px !important
+    margin-top: -60px !important
+    z-index: -1 !important
+    li
+      border-bottom: 1px solid $dark-gray
+      &:hover
+        background: $bronze-pop !important
+      a
+        line-height: 2 !important
+        color: $light-gray !important
+  p, ul, li
+    font-size: 21px !important
