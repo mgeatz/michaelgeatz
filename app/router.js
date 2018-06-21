@@ -24,8 +24,11 @@ Router.map(function() {
   this.route('enterprise');
   this.route('aem');
   this.route('contact');
-  this.route('ebook');
+  this.route('ebook', function() {});
   this.route('developer');
+
+  this.route('content', function() {});
+  this.route('preorder-ebook');
 });
 
 export default Router;

@@ -1,4 +1,10 @@
 import Component from '@ember/component';
 
-export default Component.extend({
+const MediaObject = Component.extend({
 });
+
+MediaObject.reopenClass({
+  positionalParams: ['mediaHeading', 'imageSrc']
+});
+
+export default MediaObject;

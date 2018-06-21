@@ -1,20 +1,46 @@
-{{outlet}}
 {{mini-hero-video}}
 
 <section class="container-fluid sub_page">
   <div class="container page-header">
-    <h1>Small Group Networking
-      <small>Tips, Tricks, And Advice For Devs</small>
+    <h1>Mini eBook Series
+      <small>Your Guide To Success As An Engineer</small>
     </h1>
   </div>
 
   <section class="container">
-    <p>Coming soon...</p>
-    <ul>
-      <li>Becoming A Developer</li>
-      <li>Land Any Developer Job</li>
-      <li>Build A Home Cloud Server</li>
-    </ul>
+
+    <p>
+      The following series of mini eBooks designed to advise web developers / software engineers how to best
+      leverage their skillset to improve their financial well-being. These books are designed to pack a punch in a
+      relatively small amount of time, therefore they are shorter than typical eBooks. Rather than rambling on for
+      50,000 words to reach to average page count for a book, the content averages around 10,000 words (roughly 40
+      pages).
+    </p>
+
+    <hr>
+
+    {{#content/media-object 'Becoming A Developer' 'images/becoming-a-developer.png'}}
+      <h5>Available September 1st, 2018</h5>
+      <sub>PREVIEW:</sub><br>
+      The American dream is reference to a lifestyle where one's income is large enough to support all their
+      needs and most of their wants. Due to increasing wealth disparity and the digital revolution, there are
+      only 4 remaining routes that lead to living the American dream...Becoming a developer is the
+      only practical path to reaching the American dream in today's economy. In retrospect, I achieved success
+      as a developer by following these simple strategies:...
+      <br>
+
+      <button class="btn btn-primary"
+      {{action 'preOrderbook' on='click'}}>Pre-order Now for only $4.99</button>
+    {{/content/media-object}}
+    <br>
+    {{#content/media-object 'Land Any Developer Job' 'images/land-any-developer-job.png'}}
+      <h5>Available January 1st, 2018</h5>
+      <sub>PREVIEW:</sub><br>
+      Coming soon...
+      <br>
+
+      <button class="btn btn-primary btn-disabled">Pre-order Coming Soon</button>
+    {{/content/media-object}}
   </section>
 
 </section>
